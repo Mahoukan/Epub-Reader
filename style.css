@@ -3,6 +3,7 @@ body {
   font-family: sans-serif;
   margin: 0;
   height: 100vh;
+  overflow: hidden;
 }
 
 h1 {
@@ -15,14 +16,16 @@ h1 {
   position: absolute;
   top: 2.5rem;
   left: 1rem;
+  z-index: 10;
 }
 
 #sidebar {
   width: 250px;
-  padding: 2rem 1rem;
+  padding: 3.5rem 1rem 1rem;
   background: #f2f2f2;
   overflow-y: auto;
   height: 100vh;
+  box-sizing: border-box;
 }
 
 #toc {
@@ -34,6 +37,7 @@ h1 {
   margin: 0.5rem 0;
   cursor: pointer;
   color: blue;
+  text-decoration: underline;
 }
 
 #viewer {
