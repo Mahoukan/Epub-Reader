@@ -2,18 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Web EPUB Reader</title>
+  <title>EPUB Reader</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>📚 EPUB Reader</h1>
-  <input type="file" id="file-input" accept=".epub">
-  
-  <div id="sidebar">
-    <ul id="toc"></ul>
+  <header>
+    <h1>📚 EPUB Reader</h1>
+    <input type="file" id="file-input" accept=".epub">
+    <button id="toggle-theme">🌓 Dark Mode</button>
+    <input type="text" id="search-box" placeholder="Search text...">
+    <button id="save-bookmark">🔖 Bookmark</button>
+    <button id="goto-bookmark">📍 Go to Bookmark</button>
+  </header>
+
+  <div id="main">
+    <div id="sidebar"><ul id="toc"></ul></div>
+    <div id="viewer"></div>
   </div>
-  
-  <div id="viewer"></div>
 
   <script src="https://cdn.jsdelivr.net/npm/epubjs@0.3.88/dist/epub.min.js"></script>
   <script src="app.js"></script>
