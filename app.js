@@ -48,6 +48,15 @@ function loadBook(url) {
     rendition.display(lastCfi);
   } else {
     rendition.display();
+    rendition.themes.default({
+    body: {
+        "font-family": "sans-serif",
+        "font-size": "1em",
+        "color": "#000",
+        "background": "#fff"
+    }
+});
+
   }
 
   // Track current location
